@@ -1,0 +1,1741 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiNCoreEApplication1.Api</name>
+    </assembly>
+    <members>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.AccountAsyncController">
+            <summary>
+            Account Async Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AccountAsyncController.#ctor(ApiNCoreEApplication1.Domain.Service.AccountServiceAsync{ApiNCoreEApplication1.Domain.AccountViewModel,ApiNCoreEApplication1.Entity.Account})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="accountServiceAsync"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AccountAsyncController.SelectAsync">
+            <summary>
+            Returns all Accounts.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AccountAsyncController.SelectByIdAsync(System.Int32)">
+            <summary>
+            Returns an specific Account.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AccountAsyncController.Post(ApiNCoreEApplication1.Domain.AccountViewModel)">
+            <summary>
+            Creates an specific Account.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AccountAsyncController.PutAsync(System.Int32,ApiNCoreEApplication1.Domain.AccountViewModel)">
+            <summary>
+            Updates an specific Account.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AccountAsyncController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a specific Account.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.AccountController">
+            <summary>
+            Account Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AccountController.#ctor(ApiNCoreEApplication1.Domain.Service.AccountService{ApiNCoreEApplication1.Domain.AccountViewModel,ApiNCoreEApplication1.Entity.Account})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="accountService"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AccountController.Select">
+            <summary>
+            Returns all Accounts.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AccountController.SelectById(System.Int32)">
+            <summary>
+            Returns an specific Account.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AccountController.Post(ApiNCoreEApplication1.Domain.AccountViewModel)">
+            <summary>
+            Creates an specific Account.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AccountController.Put(System.Int32,ApiNCoreEApplication1.Domain.AccountViewModel)">
+            <summary>
+            Updates an specific Account.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AccountController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific Account.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.AwardsAsyncController">
+            <summary>
+            Awards Async Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AwardsAsyncController.#ctor(ApiNCoreEApplication1.Domain.Service.AwardsServiceAsync{ApiNCoreEApplication1.Domain.AwardsViewModel,ApiNCoreEApplication1.Entity.Award})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="awardsServiceAsync"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AwardsAsyncController.SelectAsync">
+            <summary>
+            Returns all Awards.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AwardsAsyncController.SelectByIdAsync(System.Int32)">
+            <summary>
+            Returns an specific Award.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AwardsAsyncController.Post(ApiNCoreEApplication1.Domain.AwardsViewModel)">
+            <summary>
+            Creates an specific Award.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AwardsAsyncController.PutAsync(System.Int32,ApiNCoreEApplication1.Domain.AwardsViewModel)">
+            <summary>
+            Updates an specific Award.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AwardsAsyncController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a specific Award.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.AwardsController">
+            <summary>
+            Award Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AwardsController.#ctor(ApiNCoreEApplication1.Domain.Service.AwardsService{ApiNCoreEApplication1.Domain.AwardsViewModel,ApiNCoreEApplication1.Entity.Award})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="awardsService"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AwardsController.Select">
+            <summary>
+            Returns all Awards.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AwardsController.SelectById(System.Int32)">
+            <summary>
+            Returns an specific Award.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AwardsController.Post(ApiNCoreEApplication1.Domain.AwardsViewModel)">
+            <summary>
+            Creates an specific Award.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AwardsController.Put(System.Int32,ApiNCoreEApplication1.Domain.AwardsViewModel)">
+            <summary>
+            Updates an specific Award.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.AwardsController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific Award.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.CategoriesAsyncController">
+            <summary>
+            Categories Async Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.CategoriesAsyncController.#ctor(ApiNCoreEApplication1.Domain.Service.CategoriesServiceAsync{ApiNCoreEApplication1.Domain.CategoriesViewModel,ApiNCoreEApplication1.Entity.Category})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="categoriesServiceAsync"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.CategoriesAsyncController.SelectAsync">
+            <summary>
+            Returns all Categories.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.CategoriesAsyncController.SelectByIdAsync(System.Int32)">
+            <summary>
+            Returns an specific Categories.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.CategoriesAsyncController.Post(ApiNCoreEApplication1.Domain.CategoriesViewModel)">
+            <summary>
+            Creates an specific Categories.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.CategoriesAsyncController.PutAsync(System.Int32,ApiNCoreEApplication1.Domain.CategoriesViewModel)">
+            <summary>
+            Updates an specific Categories.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.CategoriesAsyncController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a specific Categories.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.CategoriesController">
+            <summary>
+            Category Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.CategoriesController.#ctor(ApiNCoreEApplication1.Domain.Service.CategoriesService{ApiNCoreEApplication1.Domain.CategoriesViewModel,ApiNCoreEApplication1.Entity.Category})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="categoriesService"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.CategoriesController.Select">
+            <summary>
+            Returns all Categories.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.CategoriesController.SelectById(System.Int32)">
+            <summary>
+            Returns an specific Category.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.CategoriesController.Post(ApiNCoreEApplication1.Domain.CategoriesViewModel)">
+            <summary>
+            Creates an specific Category.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.CategoriesController.Put(System.Int32,ApiNCoreEApplication1.Domain.CategoriesViewModel)">
+            <summary>
+            Updates an specific Category.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.CategoriesController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific Category.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersAsyncController">
+            <summary>
+            EnigmaUsers Async Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersAsyncController.#ctor(ApiNCoreEApplication1.Domain.Service.EnigmaUsersServiceAsync{ApiNCoreEApplication1.Domain.EnigmaUsersViewModel,ApiNCoreEApplication1.Entity.EnigmaUser})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="enigmaUsersServiceAsync"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersAsyncController.SelectAsync">
+            <summary>
+            Returns all EnigmaUsers.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersAsyncController.SelectByIdAsync(System.Int32)">
+            <summary>
+            Returns an specific EnigmaUsers.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersAsyncController.Post(ApiNCoreEApplication1.Domain.EnigmaUsersViewModel)">
+            <summary>
+            Creates an specific EnigmaUsers.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersAsyncController.PutAsync(System.Int32,ApiNCoreEApplication1.Domain.EnigmaUsersViewModel)">
+            <summary>
+            Updates an specific EnigmaUsers.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersAsyncController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a specific EnigmaUsers.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersController">
+            <summary>
+            EnigmaUsers Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersController.#ctor(ApiNCoreEApplication1.Domain.Service.EnigmaUsersService{ApiNCoreEApplication1.Domain.EnigmaUsersViewModel,ApiNCoreEApplication1.Entity.EnigmaUser})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="enigmaUserService"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersController.Select">
+            <summary>
+            Returns all EnigmaUsers.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersController.SelectById(System.Int32)">
+            <summary>
+            Returns an specific EnigmaUsers.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersController.Post(ApiNCoreEApplication1.Domain.EnigmaUsersViewModel)">
+            <summary>
+            Creates an specific EnigmaUsers.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersController.Put(System.Int32,ApiNCoreEApplication1.Domain.EnigmaUsersViewModel)">
+            <summary>
+            Updates an specific EnigmaUsers.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific EnigmaUsers.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersTypeAsyncController">
+            <summary>
+            EnigmaUsersType Async Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersTypeAsyncController.#ctor(ApiNCoreEApplication1.Domain.Service.EnigmaUsersTypeServiceAsync{ApiNCoreEApplication1.Domain.EnigmaUsersTypeViewModel,ApiNCoreEApplication1.Entity.EnigmaUsersType})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="enigmaUsersTypeServiceAsync"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersTypeAsyncController.SelectAsync">
+            <summary>
+            Returns all EnigmaUsersTypes.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersTypeAsyncController.SelectByIdAsync(System.Int32)">
+            <summary>
+            Returns an specific EnigmaUsersType.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersTypeAsyncController.Post(ApiNCoreEApplication1.Domain.EnigmaUsersTypeViewModel)">
+            <summary>
+            Creates an specific EnigmaUsersType.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersTypeAsyncController.PutAsync(System.Int32,ApiNCoreEApplication1.Domain.EnigmaUsersTypeViewModel)">
+            <summary>
+            Updates an specific EnigmaUsersType.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersTypeAsyncController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a specific EnigmaUsersType.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersTypeController">
+            <summary>
+            EnigmaUsersType Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersTypeController.#ctor(ApiNCoreEApplication1.Domain.Service.EnigmaUsersTypeService{ApiNCoreEApplication1.Domain.EnigmaUsersTypeViewModel,ApiNCoreEApplication1.Entity.EnigmaUsersType})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="enigmaUsersTypeService"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersTypeController.Select">
+            <summary>
+            Returns all EnigmaUsersTypes.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersTypeController.SelectById(System.Int32)">
+            <summary>
+            Returns an specific EnigmaUsersType.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersTypeController.Post(ApiNCoreEApplication1.Domain.EnigmaUsersTypeViewModel)">
+            <summary>
+            Creates an specific EnigmaUsersType.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersTypeController.Put(System.Int32,ApiNCoreEApplication1.Domain.EnigmaUsersTypeViewModel)">
+            <summary>
+            Updates an specific EnigmaUsersType.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.EnigmaUsersTypeController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific EnigmaUsersType.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.MatchesAsyncController">
+            <summary>
+            Matches Async Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.MatchesAsyncController.#ctor(ApiNCoreEApplication1.Domain.Service.MatchesServiceAsync{ApiNCoreEApplication1.Domain.MatchesViewModel,ApiNCoreEApplication1.Entity.Match})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="matchesServiceAsync"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.MatchesAsyncController.SelectAsync">
+            <summary>
+            Returns all Matches.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.MatchesAsyncController.SelectByIdAsync(System.Int32)">
+            <summary>
+            Returns an specific Matches.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.MatchesAsyncController.Post(ApiNCoreEApplication1.Domain.MatchesViewModel)">
+            <summary>
+            Creates an specific Matches.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.MatchesAsyncController.PutAsync(System.Int32,ApiNCoreEApplication1.Domain.MatchesViewModel)">
+            <summary>
+            Updates an specific Matches.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.MatchesAsyncController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a specific Matches.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.MatchesController">
+            <summary>
+            Matches Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.MatchesController.#ctor(ApiNCoreEApplication1.Domain.Service.MatchesService{ApiNCoreEApplication1.Domain.MatchesViewModel,ApiNCoreEApplication1.Entity.Match})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="matchesService"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.MatchesController.Select">
+            <summary>
+            Returns all Matches.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.MatchesController.SelectById(System.Int32)">
+            <summary>
+            Returns an specific Matches.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.MatchesController.Post(ApiNCoreEApplication1.Domain.MatchesViewModel)">
+            <summary>
+            Creates an specific Matches.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.MatchesController.Put(System.Int32,ApiNCoreEApplication1.Domain.MatchesViewModel)">
+            <summary>
+            Updates an specific Matches.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.MatchesController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific Matches.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.PlayersAsyncController">
+            <summary>
+            Players Async Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayersAsyncController.#ctor(ApiNCoreEApplication1.Domain.Service.PlayersServiceAsync{ApiNCoreEApplication1.Domain.PlayersViewModel,ApiNCoreEApplication1.Entity.Player})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="playersServiceAsync"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayersAsyncController.SelectAsync">
+            <summary>
+            Returns all Players.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayersAsyncController.SelectByIdAsync(System.Int32)">
+            <summary>
+            Returns an specific Players.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayersAsyncController.Post(ApiNCoreEApplication1.Domain.PlayersViewModel)">
+            <summary>
+            Creates an specific Players.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayersAsyncController.PutAsync(System.Int32,ApiNCoreEApplication1.Domain.PlayersViewModel)">
+            <summary>
+            Updates an specific Players.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayersAsyncController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a specific Players.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.PlayersController">
+            <summary>
+            Players Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayersController.#ctor(ApiNCoreEApplication1.Domain.Service.PlayersService{ApiNCoreEApplication1.Domain.PlayersViewModel,ApiNCoreEApplication1.Entity.Player})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="playersService"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayersController.Select">
+            <summary>
+            Returns all Playerss.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayersController.SelectById(System.Int32)">
+            <summary>
+            Returns an specific Players.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayersController.Post(ApiNCoreEApplication1.Domain.PlayersViewModel)">
+            <summary>
+            Creates an specific Players.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayersController.Put(System.Int32,ApiNCoreEApplication1.Domain.PlayersViewModel)">
+            <summary>
+            Updates an specific Players.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayersController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific Players.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.PlayerStatsAsyncController">
+            <summary>
+            PlayerStats Async Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayerStatsAsyncController.#ctor(ApiNCoreEApplication1.Domain.Service.PlayerStatsServiceAsync{ApiNCoreEApplication1.Domain.PlayerStatsViewModel,ApiNCoreEApplication1.Entity.PlayerStat})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="playerStatsServiceAsync"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayerStatsAsyncController.SelectAsync">
+            <summary>
+            Returns all PlayerStats.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayerStatsAsyncController.SelectByIdAsync(System.Int32)">
+            <summary>
+            Returns an specific PlayerStats.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayerStatsAsyncController.Post(ApiNCoreEApplication1.Domain.PlayerStatsViewModel)">
+            <summary>
+            Creates an specific PlayerStats.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayerStatsAsyncController.PutAsync(System.Int32,ApiNCoreEApplication1.Domain.PlayerStatsViewModel)">
+            <summary>
+            Updates an specific PlayerStats.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayerStatsAsyncController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a specific PlayerStats.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.PlayerStatsController">
+            <summary>
+            PlayerStats Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayerStatsController.#ctor(ApiNCoreEApplication1.Domain.Service.PlayerStatsService{ApiNCoreEApplication1.Domain.PlayerStatsViewModel,ApiNCoreEApplication1.Entity.PlayerStat})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="playerStatsService"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayerStatsController.Select">
+            <summary>
+            Returns all PlayerStats.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayerStatsController.SelectById(System.Int32)">
+            <summary>
+            Returns an specific PlayerStats.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayerStatsController.Post(ApiNCoreEApplication1.Domain.PlayerStatsViewModel)">
+            <summary>
+            Creates an specific PlayerStats.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayerStatsController.Put(System.Int32,ApiNCoreEApplication1.Domain.PlayerStatsViewModel)">
+            <summary>
+            Updates an specific PlayerStats.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.PlayerStatsController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific PlayerStats.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.ProductsAsyncController">
+            <summary>
+            Products Async Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ProductsAsyncController.#ctor(ApiNCoreEApplication1.Domain.Service.ProductsServiceAsync{ApiNCoreEApplication1.Domain.ProductsViewModel,ApiNCoreEApplication1.Entity.Product})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="productsServiceAsync"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ProductsAsyncController.SelectAsync">
+            <summary>
+            Returns all Products.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ProductsAsyncController.SelectByIdAsync(System.Int32)">
+            <summary>
+            Returns an specific Products.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ProductsAsyncController.Post(ApiNCoreEApplication1.Domain.ProductsViewModel)">
+            <summary>
+            Creates an specific Products.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ProductsAsyncController.PutAsync(System.Int32,ApiNCoreEApplication1.Domain.ProductsViewModel)">
+            <summary>
+            Updates an specific Products.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ProductsAsyncController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a specific Products.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.ProductsController">
+            <summary>
+            Products Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ProductsController.#ctor(ApiNCoreEApplication1.Domain.Service.ProductsService{ApiNCoreEApplication1.Domain.ProductsViewModel,ApiNCoreEApplication1.Entity.Product})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="productsService"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ProductsController.Select">
+            <summary>
+            Returns all Products.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ProductsController.SelectById(System.Int32)">
+            <summary>
+            Returns an specific Products.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ProductsController.Post(ApiNCoreEApplication1.Domain.ProductsViewModel)">
+            <summary>
+            Creates an specific Products.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ProductsController.Put(System.Int32,ApiNCoreEApplication1.Domain.ProductsViewModel)">
+            <summary>
+            Updates an specific Products.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ProductsController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific Products.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.ScoresAsyncController">
+            <summary>
+            Scores Async Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ScoresAsyncController.#ctor(ApiNCoreEApplication1.Domain.Service.ScoresServiceAsync{ApiNCoreEApplication1.Domain.ScoresViewModel,ApiNCoreEApplication1.Entity.Score})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="scoresServiceAsync"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ScoresAsyncController.SelectAsync">
+            <summary>
+            Returns all Scores.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ScoresAsyncController.SelectByIdAsync(System.Int32)">
+            <summary>
+            Returns an specific Scores.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ScoresAsyncController.Post(ApiNCoreEApplication1.Domain.ScoresViewModel)">
+            <summary>
+            Creates an specific Scores.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ScoresAsyncController.PutAsync(System.Int32,ApiNCoreEApplication1.Domain.ScoresViewModel)">
+            <summary>
+            Updates an specific Scores.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ScoresAsyncController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a specific Scores.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.ScoresController">
+            <summary>
+            Scores Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ScoresController.#ctor(ApiNCoreEApplication1.Domain.Service.ScoresService{ApiNCoreEApplication1.Domain.ScoresViewModel,ApiNCoreEApplication1.Entity.Score})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="scoresService"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ScoresController.Select">
+            <summary>
+            Returns all Scores.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ScoresController.SelectById(System.Int32)">
+            <summary>
+            Returns an specific Scores.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ScoresController.Post(ApiNCoreEApplication1.Domain.ScoresViewModel)">
+            <summary>
+            Creates an specific Scores.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ScoresController.Put(System.Int32,ApiNCoreEApplication1.Domain.ScoresViewModel)">
+            <summary>
+            Updates an specific Scores.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.ScoresController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific Scores.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.SeasonAsyncController">
+            <summary>
+            Season Async Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.SeasonAsyncController.#ctor(ApiNCoreEApplication1.Domain.Service.SeasonServiceAsync{ApiNCoreEApplication1.Domain.SeasonViewModel,ApiNCoreEApplication1.Entity.Season})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seasonServiceAsync"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.SeasonAsyncController.SelectAsync">
+            <summary>
+            Returns all Seasons.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.SeasonAsyncController.SelectByIdAsync(System.Int32)">
+            <summary>
+            Returns an specific Season.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.SeasonAsyncController.Post(ApiNCoreEApplication1.Domain.SeasonViewModel)">
+            <summary>
+            Creates an specific Season.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.SeasonAsyncController.PutAsync(System.Int32,ApiNCoreEApplication1.Domain.SeasonViewModel)">
+            <summary>
+            Updates an specific Season.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.SeasonAsyncController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a specific Season.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.SeasonController">
+            <summary>
+            Season Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.SeasonController.#ctor(ApiNCoreEApplication1.Domain.Service.SeasonService{ApiNCoreEApplication1.Domain.SeasonViewModel,ApiNCoreEApplication1.Entity.Season})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="seasonService"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.SeasonController.Select">
+            <summary>
+            Returns all Seasons.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.SeasonController.SelectById(System.Int32)">
+            <summary>
+            Returns an specific Season.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.SeasonController.Post(ApiNCoreEApplication1.Domain.SeasonViewModel)">
+            <summary>
+            Creates an specific Season.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.SeasonController.Put(System.Int32,ApiNCoreEApplication1.Domain.SeasonViewModel)">
+            <summary>
+            Updates an specific Season.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.SeasonController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific Season.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.TeamsAsyncController">
+            <summary>
+            Teams Async Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TeamsAsyncController.#ctor(ApiNCoreEApplication1.Domain.Service.TeamsServiceAsync{ApiNCoreEApplication1.Domain.TeamsViewModel,ApiNCoreEApplication1.Entity.Team})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="teamsServiceAsync"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TeamsAsyncController.SelectAsync">
+            <summary>
+            Returns all Teams.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TeamsAsyncController.SelectByIdAsync(System.Int32)">
+            <summary>
+            Returns an specific Teams.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TeamsAsyncController.Post(ApiNCoreEApplication1.Domain.TeamsViewModel)">
+            <summary>
+            Creates an specific Teams.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TeamsAsyncController.PutAsync(System.Int32,ApiNCoreEApplication1.Domain.TeamsViewModel)">
+            <summary>
+            Updates an specific Teams.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TeamsAsyncController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a specific Teams.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.TeamsController">
+            <summary>
+            Teams Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TeamsController.#ctor(ApiNCoreEApplication1.Domain.Service.TeamsService{ApiNCoreEApplication1.Domain.TeamsViewModel,ApiNCoreEApplication1.Entity.Team})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="teamsService"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TeamsController.Select">
+            <summary>
+            Returns all Teams.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TeamsController.SelectById(System.Int32)">
+            <summary>
+            Returns an specific Teams.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TeamsController.Post(ApiNCoreEApplication1.Domain.TeamsViewModel)">
+            <summary>
+            Creates an specific Teams.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TeamsController.Put(System.Int32,ApiNCoreEApplication1.Domain.TeamsViewModel)">
+            <summary>
+            Updates an specific Teams.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TeamsController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific Teams.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.TournamentsAsyncController">
+            <summary>
+            Tournaments Async Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TournamentsAsyncController.#ctor(ApiNCoreEApplication1.Domain.Service.TournamentsServiceAsync{ApiNCoreEApplication1.Domain.TournamentsViewModel,ApiNCoreEApplication1.Entity.Tournament})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="tournamentsServiceAsync"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TournamentsAsyncController.SelectAsync">
+            <summary>
+            Returns all Tournaments.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TournamentsAsyncController.SelectByIdAsync(System.Int32)">
+            <summary>
+            Returns an specific Tournaments.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TournamentsAsyncController.Post(ApiNCoreEApplication1.Domain.TournamentsViewModel)">
+            <summary>
+            Creates an specific Tournaments.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TournamentsAsyncController.PutAsync(System.Int32,ApiNCoreEApplication1.Domain.TournamentsViewModel)">
+            <summary>
+            Updates an specific Tournaments.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TournamentsAsyncController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a specific Tournaments.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.TournamentsController">
+            <summary>
+            Tournaments Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TournamentsController.#ctor(ApiNCoreEApplication1.Domain.Service.TournamentsService{ApiNCoreEApplication1.Domain.TournamentsViewModel,ApiNCoreEApplication1.Entity.Tournament})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="tournamentsService"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TournamentsController.Select">
+            <summary>
+            Returns all Tournamentss.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TournamentsController.SelectById(System.Int32)">
+            <summary>
+            Returns an specific Tournaments.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TournamentsController.Post(ApiNCoreEApplication1.Domain.TournamentsViewModel)">
+            <summary>
+            Creates an specific Tournaments.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TournamentsController.Put(System.Int32,ApiNCoreEApplication1.Domain.TournamentsViewModel)">
+            <summary>
+            Updates an specific Tournaments.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.TournamentsController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific Tournaments.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.UserAsyncController">
+            <summary>
+            User Controller Async
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.UserAsyncController.#ctor(ApiNCoreEApplication1.Domain.Service.UserServiceAsync{ApiNCoreEApplication1.Domain.UserViewModel,ApiNCoreEApplication1.Entity.User})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="userServiceAsync"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.UserAsyncController.SelectAsync">
+            <summary>
+            Returns all Users.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.UserAsyncController.GetActiveByFirstNameAsync(System.String)">
+            <summary>
+            get all active by username
+            </summary>
+            <param name="firstname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.UserAsyncController.SelectByIdAsync(System.Int32)">
+            <summary>
+            Returns an specific User.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.UserAsyncController.Post(ApiNCoreEApplication1.Domain.UserViewModel)">
+            <summary>
+            Creates an specific Award.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.UserAsyncController.PutAsync(System.Int32,ApiNCoreEApplication1.Domain.UserViewModel)">
+            <summary>
+            Updates an specific User.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.UserAsyncController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a specific User.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.Controllers.UserController">
+            <summary>
+            User Controller
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.UserController.#ctor(ApiNCoreEApplication1.Domain.Service.UserService{ApiNCoreEApplication1.Domain.UserViewModel,ApiNCoreEApplication1.Entity.User})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="userService"></param>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.UserController.Select">
+            <summary>
+            Returns all Users.
+            </summary>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.UserController.GetActiveByFirstName(System.String)">
+            <summary>
+            get all active by username
+            </summary>
+            <param name="firstname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.UserController.SelectById(System.Int32)">
+            <summary>
+            Returns an specific User.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.UserController.Post(ApiNCoreEApplication1.Domain.UserViewModel)">
+            <summary>
+            Creates an specific Award.
+            </summary>
+            <param name="user"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.UserController.Put(System.Int32,ApiNCoreEApplication1.Domain.UserViewModel)">
+            <summary>
+            Updates an specific User.
+            </summary>
+            <param name="user"></param>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Deletes a specific User.
+            </summary>
+            <param name="id"></param>
+            <response code="200">Returns the newly created item</response>
+            <response code="401">No Authorized</response>
+            <response code="404">No Data</response>
+            <response code="502">Internal Error</response>
+        </member>
+        <member name="T:ApiNCoreEApplication1.Api.ExceptionHandler">
+            <summary>
+            Middleware - error handling
+            </summary>
+        </member>
+        <member name="M:ApiNCoreEApplication1.Api.Program.SetupLogglyConfiguration(ApiNCoreEApplication1.Api.Settings.LogglySettings)">
+            <summary>
+            Configure Loggly provider
+            </summary>
+            <param name="logglySettings"></param>
+        </member>
+    </members>
+</doc>

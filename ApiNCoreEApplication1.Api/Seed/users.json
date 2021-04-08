@@ -1,0 +1,16 @@
+[
+  {
+    "Created": "1/1/2018",
+    "Modified": "1/1/2018",
+    "FirstName": "Jorge",
+    "LastName": "Diaz",
+    "UserName": "jpd21122012",
+    "Email": "jperales@enigma-mx.com",
+    "Description": "Hacker Account",
+    "IsAdminRole": true,
+    "Roles": "Administrator",
+    "IsActive": true,
+    "Password": "S7NmJEhv4OsqJbwCxQtV/w==",
+    "AccountId": 1
+  }
+]
